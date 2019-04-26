@@ -6,16 +6,13 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
-  test "should get root"do
-    get root_url
-    assert_response :success
-    end
+  
 
   
   test "should get Category"do
     get static_pages_Category_url
     assert_response :success
-    assert_select "title", "Category | Category page" 
+    assert_select "title", "Category page" 
   end
   
   test "should get Locations"do
